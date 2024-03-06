@@ -17,7 +17,7 @@ function MainApp() {
 
   useEffect(() => {
     // fetch
-    axios.get("https://sum-server.100xdevs.com/notifications")
+    axios.get("http://localhost:3000/notifications")
       .then(res => {
         if (res.data !== networkCount) {
           setNetworkCount(res.data)
