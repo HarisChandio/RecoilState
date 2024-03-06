@@ -19,9 +19,7 @@ function MainApp() {
     // fetch
     axios.get("http://localhost:3000/notifications")
       .then(res => {
-        if (res.data !== networkCount) {
-          setNetworkCount(res.data)
-        }
+         setNetworkCount(res.data)
       })
   }, [])
 
